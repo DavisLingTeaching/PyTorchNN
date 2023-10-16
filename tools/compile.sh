@@ -1,5 +1,5 @@
 NOTEBOOK='../key/Intro2NN.ipynb'
-NOTESMD='../Intro2NN.md'
+NOTESMD='../README.md'
 NOTESPDF='../Intro2NN.pdf'
 SOLUTIONSMD='../key/Intro2NN_key.md'
 SOLUTIONSPDF='../key/Intro2NN_key.pdf'
