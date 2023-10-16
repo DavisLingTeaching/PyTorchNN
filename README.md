@@ -21,7 +21,7 @@ setSeed()
 ## Building a Neural Model
 In this section, we will learn about the basic for building a neural model using pytorch, before turning to implementing a feed forward model. For ease of explanation, we'll imagine we want to implement a simple, one-layer neural model which performs a simple mapping. Namely, $f(2; \theta) \rightarrow 5$. It is easy enough to imagine many functions $f$ parameterized by $\theta$ which will accomplish this. But we will let our model learn its own $\theta$, but restrict our functions $f$ to linear functions (we return this momentarily). Below, we alternate between basic aspects of building a model and the implementation of a model which learns this mapping. To scaffold this, I've created a figure which, at a very high level, sketches the basic components of a neural model and how they fit together. Each part of the figure should make sense to you by the end of this lecture, but for now it may be confusing. It's just here as an outline of what is to come.
 
-![figures/basicmodel.png]
+![](https://github.com/DavisLingTeaching/PyTorchNN/blob/main/figures/basicmodel.png)
 
 ### Class Structure
 
@@ -534,11 +534,12 @@ def plot(points: tuple = None, asVector: bool=False,
 ```python
 plot(points=[(1.62, 1.75, 0), (-0.2084, 0.8439, ((-0.2084*2+0.8439)-5)**2)])
 ```
+![](https://github.com/DavisLingTeaching/PyTorchNN/blob/main/figures/loss.png)
 
 A cleaner visualization of gradient descent is copied below:
 
 
-![figures/descent.gif]
+![](https://github.com/DavisLingTeaching/PyTorchNN/blob/main/figures/descent.gif)
 
 ### Optimizers
 
@@ -1089,7 +1090,7 @@ $$ \textrm{GELU}(x) = x * \Phi(x) $$
 
 Where $\Phi(x)$ is the cumulative distribution function for a gaussian distribution. The application of GELU to a input looks like:
 
-![figures/GELU.png]
+![](https://github.com/DavisLingTeaching/PyTorchNN/blob/main/figures/GELU.png)
 
 ## Loss Functions
 
